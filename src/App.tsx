@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import { useGame } from './hooks/useGame';
 import { MenuScreen } from './components/MenuScreen';
 import { GameScreen } from './components/GameScreen';
@@ -117,6 +118,7 @@ export default function App() {
           )}
         </motion.div>
       </AnimatePresence>
+      <Analytics />
     </div>
   );
 }
