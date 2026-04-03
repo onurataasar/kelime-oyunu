@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #0a0e1a;
+    color: white;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Türkçe karakter desteği için */
+  body {
+    font-family: 'Rajdhani', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .bg-navy-950 {
+    background-color: #0a0e1a;
+  }
+  .bg-white\/8 {
+    background-color: rgb(255 255 255 / 0.08);
+  }
+  .bg-gold-400\/3 {
+    background-color: rgb(255 215 0 / 0.03);
+  }
+}
